@@ -96,6 +96,11 @@ var config = {
       callback: " ",
       onChapterEnter: [
         {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+          duration: 5000,
+        },
+        {
           layer: "barrios-lineas-dhu9vw",
           opacity: 0,
         },
@@ -110,6 +115,11 @@ var config = {
         },
       ],
       onChapterExit: [
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+          duration: 5000,
+        },
         {
           layer: "area_to_linea-ahr8es",
           opacity: 0.5,
@@ -260,7 +270,7 @@ var config = {
       title: "Los indicadores:",
       image: "./assets/LISTADO_INDI.png",
       description:
-        "Se utilizan un total de diez indicadores repartidos en seis ambitos o ejes de sostenibilidad:",
+        "Se utiliza un total de diez indicadores repartidos en seis ambitos o ejes de sostenibilidad:",
       location: {
         center: [7.67894, 45.0545],
         zoom: 14.35,
@@ -270,6 +280,11 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: true,
       onChapterEnter: [
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+          duration: 5000,
+        },
         {
           layer: "palazzi-9xohjo",
           opacity: 1,
@@ -281,6 +296,11 @@ var config = {
         },
       ],
       onChapterExit: [
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+          duration: 5000,
+        },
         {
           layer: "area_to_linea-ahr8es",
           opacity: 0.5,
@@ -288,16 +308,16 @@ var config = {
       ],
     },
     {
-      id: "Ch2_fin",
+      id: "Ch2_a",
       alignment: "right",
       title: "Reparto del viario público",
       image: " ",
       description:
-        "Vpeatones% = superficie del viario peatonal – superficie del viario dedicado al pase de vehículos. <br> <br> El objetivo principal de este indicador es identificar donde y si se respeta la función mixta del viario público urbano mediante la extensión del eje peatonal, en un espacio que tradicionalmente viene utilizado/planeado predominantemente por/para el vehículo privado.",
+        "Vpeatones% = superficie del viario peatonal / superficie del viario total. <br> <br> El objetivo principal de este indicador es identificar donde y si se respeta la función mixta del viario público urbano mediante una extensión adecuada del eje peatonal, en un espacio que tradicionalmente viene utilizado/planeado predominantemente por/para el vehículo privado.",
       location: {
-        center: [7.67894, 45.0545],
-        zoom: 14.35,
-        pitch: 82.5,
+        center: [7.67555, 45.05981],
+        zoom: 14.05,
+        pitch: 40.0,
         bearing: 0.0,
       },
       mapAnimation: "flyTo",
@@ -305,15 +325,52 @@ var config = {
       onChapterEnter: [
         {
           layer: "palazzi-9xohjo",
-          opacity: 1,
+          opacity: 0.5,
         },
         {
-          layer: "area_to_linea-ahr8es",
-          opacity: 0.5,
-          duration: 5000,
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
         },
       ],
       onChapterExit: [
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0.7,
+        },
+      ],
+    },
+    {
+      id: "Ch2_b",
+      alignment: "right",
+      title: " ",
+      image: " ",
+      description:
+        "Vpeatones% = superficie del viario peatonal / superficie del viario dedicado al pase de vehículos. <br> <br> El objetivo principal de este indicador es identificar donde y si se respeta la función mixta del viario público urbano mediante una extensión adecuada del eje peatonal, en un espacio que tradicionalmente viene utilizado/planeado predominantemente por/para el vehículo privado.",
+      location: {
+        center: [7.67061, 45.05955],
+        zoom: 15.6,
+        pitch: 59.5,
+        bearing: -61.6,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: true,
+      onChapterEnter: [
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 1,
+          duration: 5000,
+        },
+        {
+          layer: "palazzi-9xohjo",
+          opacity: 0.3,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 1,
+          duration: 5000,
+        },
         {
           layer: "area_to_linea-ahr8es",
           opacity: 0.5,
