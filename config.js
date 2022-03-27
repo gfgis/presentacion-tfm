@@ -225,7 +225,7 @@ var config = {
       ],
     },
     {
-      id: "Ch1h_datos_esenc",
+      id: "Ch1g_datos_esenc",
       alignment: "right",
       title: " ",
       image: " ",
@@ -248,31 +248,75 @@ var config = {
           layer: "barrios-lineas-dhu9vw",
           opacity: 0,
         },
+        {
+          layer: "palazzi-9xohjo",
+          opacity: 1,
+        },
       ],
     },
     {
       id: "Ch1_fin",
       alignment: "right",
-      title: "Pennypack Park Trails",
+      title: "Los indicadores:",
       image: "./assets/LISTADO_INDI.png",
       description:
-        "Se utilizan un total de diez indicadores repartidos en seis ambitos o ejes de sostenibilidad",
+        "Se utilizan un total de diez indicadores repartidos en seis ambitos o ejes de sostenibilidad:",
       location: {
-        center: [-75.05685, 40.06839],
-        zoom: 13.73,
-        pitch: 43.5,
-        bearing: 96.8,
+        center: [7.67894, 45.0545],
+        zoom: 14.35,
+        pitch: 82.5,
+        bearing: 0.0,
       },
+      mapAnimation: "flyTo",
+      rotateAnimation: true,
       onChapterEnter: [
         {
-          layer: "pennypack",
+          layer: "palazzi-9xohjo",
           opacity: 1,
+        },
+        {
+          layer: "area_to_linea-ahr8es",
+          opacity: 0.5,
+          duration: 5000,
         },
       ],
       onChapterExit: [
         {
-          layer: "pennypack",
-          opacity: 0,
+          layer: "area_to_linea-ahr8es",
+          opacity: 0.5,
+        },
+      ],
+    },
+    {
+      id: "Ch2_fin",
+      alignment: "right",
+      title: "Reparto del viario público",
+      image: " ",
+      description:
+        "Vpeatones% = superficie del viario peatonal – superficie del viario dedicado al pase de vehículos. <br> <br> El objetivo principal de este indicador es identificar donde y si se respeta la función mixta del viario público urbano mediante la extensión del eje peatonal, en un espacio que tradicionalmente viene utilizado/planeado predominantemente por/para el vehículo privado.",
+      location: {
+        center: [7.67894, 45.0545],
+        zoom: 14.35,
+        pitch: 82.5,
+        bearing: 0.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: true,
+      onChapterEnter: [
+        {
+          layer: "palazzi-9xohjo",
+          opacity: 1,
+        },
+        {
+          layer: "area_to_linea-ahr8es",
+          opacity: 0.5,
+          duration: 5000,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "area_to_linea-ahr8es",
+          opacity: 0.5,
         },
       ],
     },
