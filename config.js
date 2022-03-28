@@ -65,11 +65,31 @@ var config = {
       ],
       onChapterExit: [
         {
+          layer: "circoscrizioni-63kg0n",
+          opacity: 0,
+        },
+        {
           layer: "area_to_linea-ahr8es",
           opacity: 0.5,
         },
         {
+          layer: "vpeatones-barrios-dyfzyw",
+          opacity: 0,
+        },
+        {
           layer: "barrios-lineas-dhu9vw",
+          opacity: 0,
+        },
+        {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0,
+        },
+        {
+          layer: "palazzi-9xohjo",
+          opacity: 0.7,
+        },
+        {
+          layer: "PServicios",
           opacity: 0,
         },
       ],
@@ -96,9 +116,25 @@ var config = {
       callback: " ",
       onChapterEnter: [
         {
+          layer: "circoscrizioni-63kg0n",
+          opacity: 0,
+        },
+        {
+          layer: "PServicios",
+          opacity: 0,
+        },
+        {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0,
+        },
+        {
           layer: "vpeatones-bto0ry",
           opacity: 0,
           duration: 5000,
+        },
+        {
+          layer: "carreggiata-9oh3yv",
+          opacity: 0,
         },
         {
           layer: "barrios-lineas-dhu9vw",
@@ -116,9 +152,17 @@ var config = {
       ],
       onChapterExit: [
         {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0,
+        },
+        {
           layer: "vpeatones-bto0ry",
           opacity: 0,
           duration: 5000,
+        },
+        {
+          layer: "carreggiata-9oh3yv",
+          opacity: 0,
         },
         {
           layer: "area_to_linea-ahr8es",
@@ -255,6 +299,10 @@ var config = {
       ],
       onChapterExit: [
         {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0,
+        },
+        {
           layer: "barrios-lineas-dhu9vw",
           opacity: 0,
         },
@@ -281,9 +329,17 @@ var config = {
       rotateAnimation: true,
       onChapterEnter: [
         {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0,
+        },
+        {
           layer: "vpeatones-bto0ry",
           opacity: 0,
           duration: 5000,
+        },
+        {
+          layer: "carreggiata-9oh3yv",
+          opacity: 0,
         },
         {
           layer: "palazzi-9xohjo",
@@ -302,6 +358,10 @@ var config = {
           duration: 5000,
         },
         {
+          layer: "carreggiata-9oh3yv",
+          opacity: 0,
+        },
+        {
           layer: "area_to_linea-ahr8es",
           opacity: 0.5,
         },
@@ -313,16 +373,20 @@ var config = {
       title: "Reparto del viario público",
       image: " ",
       description:
-        "Vpeatones% = superficie del viario peatonal / superficie del viario total. <br> <br> El objetivo principal de este indicador es identificar donde y si se respeta la función mixta del viario público urbano mediante una extensión adecuada del eje peatonal, en un espacio que tradicionalmente viene utilizado/planeado predominantemente por/para el vehículo privado.",
+        " El objetivo principal de este indicador es identificar donde y si se respeta la función mixta del viario público urbano mediante una extensión adecuada del eje peatonal, en un espacio que tradicionalmente viene utilizado/planeado predominantemente por/para el vehículo privado.",
       location: {
         center: [7.67555, 45.05981],
-        zoom: 14.05,
+        zoom: 14.2,
         pitch: 40.0,
         bearing: 0.0,
       },
       mapAnimation: "flyTo",
       rotateAnimation: true,
       onChapterEnter: [
+        {
+          layer: "carreggiata-9oh3yv",
+          opacity: 1,
+        },
         {
           layer: "palazzi-9xohjo",
           opacity: 0.5,
@@ -333,6 +397,10 @@ var config = {
         },
       ],
       onChapterExit: [
+        {
+          layer: "carreggiata-9oh3yv",
+          opacity: 0,
+        },
         {
           layer: "vpeatones-bto0ry",
           opacity: 0.7,
@@ -345,7 +413,48 @@ var config = {
       title: " ",
       image: " ",
       description:
-        "Vpeatones% = superficie del viario peatonal / superficie del viario dedicado al pase de vehículos. <br> <br> El objetivo principal de este indicador es identificar donde y si se respeta la función mixta del viario público urbano mediante una extensión adecuada del eje peatonal, en un espacio que tradicionalmente viene utilizado/planeado predominantemente por/para el vehículo privado.",
+        "Vpeatones% = superficie del viario peatonal / superficie del viario total.",
+      location: {
+        center: [7.67555, 45.05981],
+        zoom: 14.05,
+        pitch: 40.0,
+        bearing: 0.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      onChapterEnter: [
+        {
+          layer: "carreggiata-9oh3yv",
+          opacity: 0,
+        },
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 1,
+        },
+        {
+          layer: "palazzi-9xohjo",
+          opacity: 0.3,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 1,
+        },
+        {
+          layer: "carreggiata-9oh3yv",
+          opacity: 0,
+        },
+      ],
+    },
+    {
+      id: "Ch2_c",
+      alignment: "right",
+      title:
+        "Vpeatones% = superficie del viario peatonal / superficie del viario total",
+      image: " ",
+      description:
+        "La red del viario viene segmentada por una malla hexagonal de 0.5 hectarias para obtener datos a un mayor nivel de detalle. En verde oscuro es posible apreciar zonas con una proporción 'adecuada' de viario peatonal, mientras que en rojo se observan aquellas partes del viario donde hay carencia de espacios peatonales.",
       location: {
         center: [7.67061, 45.05955],
         zoom: 15.6,
@@ -355,6 +464,10 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: true,
       onChapterEnter: [
+        {
+          layer: "carreggiata-9oh3yv",
+          opacity: 0,
+        },
         {
           layer: "vpeatones-bto0ry",
           opacity: 1,
@@ -374,6 +487,205 @@ var config = {
         {
           layer: "area_to_linea-ahr8es",
           opacity: 0.5,
+        },
+        {
+          layer: "vpeatones-barrios-dyfzyw",
+          opacity: 1,
+        },
+      ],
+    },
+    {
+      id: "Ch2_d",
+      alignment: "right",
+      title: "Vpeatones por barrios",
+      image: " ",
+      description:
+        "Ningún barrio cumple con la superficie minima esperada de peatonal, que debería ser como mínimo un 60%, sino que el mayor resultado obtenido corresponde a 55% de superficie peatonal.",
+      location: {
+        center: [7.70343, 45.04905],
+        zoom: 11.4,
+        pitch: 0.0,
+        bearing: 22.83,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      onChapterEnter: [
+        {
+          layer: "vpeatones-barrios-dyfzyw",
+          opacity: 1,
+        },
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+          duration: 5000,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "vpeatones-barrios-dyfzyw",
+          opacity: 1,
+        },
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+          duration: 5000,
+        },
+      ],
+    },
+    {
+      id: "Ch3_a",
+      alignment: "right",
+      title: "Proximidad de la población a los servicios basicos",
+      image: "",
+      description:
+        "El objetivo de este indicador es asegurar un mínimo de servicios básicos de proximidad para la población, en términos de equipamientos públicos, redes de transporte público, comercios de proximidad y espacios verdes.",
+      location: {
+        center: [7.67066, 45.04649],
+        zoom: 13.27,
+        pitch: 63.0,
+        bearing: -31.2,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      onChapterEnter: [
+        {
+          layer: "vpeatones-barrios-dyfzyw",
+          opacity: 0,
+        },
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+        },
+        {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0.7,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "vpeatones-barrios-dyfzyw",
+          opacity: 0,
+        },
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+        },
+        {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0.7,
+        },
+      ],
+    },
+    {
+      id: "Ch3_b",
+      alignment: "right",
+      title: "Secciones censales con acceso al numero mínimo de servicios",
+      image: "",
+      description:
+        "El objetivo de este indicador es asegurar un mínimo de servicios básicos de proximidad para la población, en términos de equipamientos públicos, redes de transporte público, comercios de proximidad y espacios verdes.",
+      location: {
+        center: [7.67066, 45.04649],
+        zoom: 13.27,
+        pitch: 63.0,
+        bearing: -31.2,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      onChapterEnter: [
+        {
+          layer: "vpeatones-barrios-dyfzyw",
+          opacity: 0,
+        },
+        {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0.7,
+        },
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+          duration: 5000,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "vpeatones-barrios-dyfzyw",
+          opacity: 0,
+        },
+        {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0.7,
+        },
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+          duration: 5000,
+        },
+        {
+          layer: "barrios-lineas-dhu9vw",
+          opacity: 0,
+        },
+        {
+          layer: "circoscrizioni-63kg0n",
+          opacity: 0,
+        },
+      ],
+    },
+    {
+      id: "Ch3_c",
+      alignment: "right",
+      title: "Barrios",
+      image: "",
+      description: " ",
+      location: {
+        center: [7.68382, 45.0576],
+        zoom: 11.47,
+        pitch: 11.5,
+        bearing: 24.71,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      onChapterEnter: [
+        {
+          layer: "circoscrizioni-63kg0n",
+          opacity: 0,
+        },
+        {
+          layer: "barrios-lineas-dhu9vw",
+          opacity: 0,
+        },
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+        },
+        {
+          layer: "vpeatones-barrios-dyfzyw",
+          opacity: 0,
+        },
+        {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0,
+        },
+        {
+          layer: "PServicios",
+          opacity: 1,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "vpeatones-barrios-dyfzyw",
+          opacity: 0,
+        },
+        {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0,
+        },
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+        },
+        {
+          layer: "PServicios",
+          opacity: 1,
         },
       ],
     },
