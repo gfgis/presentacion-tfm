@@ -73,7 +73,7 @@ var config = {
           opacity: 0.5,
         },
         {
-          layer: "vpeatones-barrios-dyfzyw",
+          layer: "Barrios_bpeat",
           opacity: 0,
         },
         {
@@ -381,7 +381,7 @@ var config = {
         bearing: 0.0,
       },
       mapAnimation: "flyTo",
-      rotateAnimation: true,
+      rotateAnimation: false,
       onChapterEnter: [
         {
           layer: "carreggiata-9oh3yv",
@@ -482,15 +482,15 @@ var config = {
         {
           layer: "vpeatones-bto0ry",
           opacity: 1,
-          duration: 5000,
         },
         {
           layer: "area_to_linea-ahr8es",
           opacity: 0.5,
         },
         {
-          layer: "vpeatones-barrios-dyfzyw",
+          layer: "Barrios_bpeat",
           opacity: 1,
+          duration: 5000,
         },
       ],
     },
@@ -498,37 +498,35 @@ var config = {
       id: "Ch2_d",
       alignment: "right",
       title: "Vpeatones por barrios",
-      image: " ",
+      image: "",
       description:
         "Ningún barrio cumple con la superficie minima esperada de peatonal, que debería ser como mínimo un 60%, sino que el mayor resultado obtenido corresponde a 55% de superficie peatonal.",
       location: {
         center: [7.70343, 45.04905],
-        zoom: 11.4,
-        pitch: 0.0,
+        zoom: 11.2,
+        pitch: 0.2,
         bearing: 22.83,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
       onChapterEnter: [
         {
-          layer: "vpeatones-barrios-dyfzyw",
+          layer: "Barrios_bpeat",
           opacity: 1,
         },
         {
           layer: "vpeatones-bto0ry",
           opacity: 0,
-          duration: 5000,
         },
       ],
       onChapterExit: [
         {
-          layer: "vpeatones-barrios-dyfzyw",
-          opacity: 1,
+          layer: "Barrios_bpeat",
+          opacity: 0,
         },
         {
           layer: "vpeatones-bto0ry",
           opacity: 0,
-          duration: 5000,
         },
       ],
     },
@@ -536,9 +534,9 @@ var config = {
       id: "Ch3_a",
       alignment: "right",
       title: "Proximidad de la población a los servicios basicos",
-      image: "",
+      image: "./assets/Prox_Serv_Basics.png",
       description:
-        "El objetivo de este indicador es asegurar un mínimo de servicios básicos de proximidad para la población, en términos de equipamientos públicos, redes de transporte público, comercios de proximidad y espacios verdes.",
+        "El objetivo de este indicador es asegurar un mínimo de servicios básicos de proximidad para la población.Para tal, se establecen 4 macro cate de servicios básicos y se estima una distancia máximas",
       location: {
         center: [7.67066, 45.04649],
         zoom: 13.27,
@@ -549,51 +547,15 @@ var config = {
       rotateAnimation: false,
       onChapterEnter: [
         {
-          layer: "vpeatones-barrios-dyfzyw",
+          layer: "Barrios_bpeat",
           opacity: 0,
         },
         {
-          layer: "vpeatones-bto0ry",
+          layer: "palazzi-9xohjo",
           opacity: 0,
         },
         {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0.7,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "vpeatones-barrios-dyfzyw",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-        },
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0.7,
-        },
-      ],
-    },
-    {
-      id: "Ch3_b",
-      alignment: "right",
-      title: "Secciones censales con acceso al numero mínimo de servicios",
-      image: "",
-      description:
-        "El objetivo de este indicador es asegurar un mínimo de servicios básicos de proximidad para la población, en términos de equipamientos públicos, redes de transporte público, comercios de proximidad y espacios verdes.",
-      location: {
-        center: [7.67066, 45.04649],
-        zoom: 13.27,
-        pitch: 63.0,
-        bearing: -31.2,
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      onChapterEnter: [
-        {
-          layer: "vpeatones-barrios-dyfzyw",
+          layer: "Barrios_bpeat",
           opacity: 0,
         },
         {
@@ -608,7 +570,7 @@ var config = {
       ],
       onChapterExit: [
         {
-          layer: "vpeatones-barrios-dyfzyw",
+          layer: "Barrios_bpeat",
           opacity: 0,
         },
         {
@@ -631,11 +593,12 @@ var config = {
       ],
     },
     {
-      id: "Ch3_c",
+      id: "Ch3_b",
       alignment: "right",
-      title: "Barrios",
-      image: "",
-      description: " ",
+      title: "% de población con acceso a los Servicios básicos por barrios",
+      image: "./assets/Leg_Prox_Serv_Basics.png",
+      description:
+        "En general, la ciudad de Turín carece de servicios básicos en proximidad para sus habitantes. Se observa que en su conjunto apenas el 47% de la población tiene una cobertura simultánea a al menos 13 servicios pertenecientes a las cuatro tipologías indicadas y que apenas 2 barrios (Centro y San Salvario) tienen 75% de la población cobierta.",
       location: {
         center: [7.68382, 45.0576],
         zoom: 11.47,
@@ -658,7 +621,7 @@ var config = {
           opacity: 0,
         },
         {
-          layer: "vpeatones-barrios-dyfzyw",
+          layer: "Barrios_bpeat",
           opacity: 0,
         },
         {
@@ -667,12 +630,192 @@ var config = {
         },
         {
           layer: "PServicios",
-          opacity: 1,
+          opacity: 0.7,
         },
       ],
       onChapterExit: [
         {
-          layer: "vpeatones-barrios-dyfzyw",
+          layer: "Barrios_bpeat",
+          opacity: 0,
+        },
+        {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0,
+        },
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+        },
+        {
+          layer: "PServicios",
+          opacity: 1,
+        },
+      ],
+    },
+    {
+      id: "Ch4a_Conclusiones",
+      alignment: "full",
+      title: "Resultados de los indicadores para el conjunto de la ciudad",
+      image: "./assets/resultados_ejes-01-01-01.png",
+      description:
+        "Con la finalidad de obtener un resultado global de sostenibilidad para la ciudad de Turín a partir de los diez indicadores estudiados, se establece un sistema de puntuación que varía de cero a diez en función de si el indicador ha al alcanzado o no los objetivos mínimos y deseables. Una vez puntuados los indicadores estos vienen agrupados por ámbitos. ",
+      location: {
+        center: [7.68382, 45.0576],
+        zoom: 11.47,
+        pitch: 11.5,
+        bearing: 24.71,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      onChapterEnter: [
+        {
+          layer: "circoscrizioni-63kg0n",
+          opacity: 0,
+        },
+        {
+          layer: "barrios-lineas-dhu9vw",
+          opacity: 0,
+        },
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+        },
+        {
+          layer: "Barrios_bpeat",
+          opacity: 0,
+        },
+        {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0,
+        },
+        {
+          layer: "PServicios",
+          opacity: 0.7,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "Barrios_bpeat",
+          opacity: 0,
+        },
+        {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0,
+        },
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+        },
+        {
+          layer: "PServicios",
+          opacity: 1,
+        },
+      ],
+    },
+    {
+      id: "Ch4b_Conclusiones",
+      alignment: "full",
+      title: "",
+      image: "./assets/resultados_ramas-01.png",
+      description:
+        "Finalmente se agrupan los seis ambitos en 3 macro ejes y se establece un peso igual a un tercio para cada uno de estos para poder comparar los resultados de los mismos. Una vez ponderados los valores se observa que la rama de 'Compacidad y Funcionalidad' es aquella con resultados más bajos, indicando mayores deficits. Se procede entonces a calcular el resultado de la ciudad de Turín sobre la suma de lo que serían los totales de los pesos, o sea, el 100% ",
+      location: {
+        center: [7.68382, 45.0576],
+        zoom: 11.47,
+        pitch: 11.5,
+        bearing: 24.71,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      onChapterEnter: [
+        {
+          layer: "circoscrizioni-63kg0n",
+          opacity: 0,
+        },
+        {
+          layer: "barrios-lineas-dhu9vw",
+          opacity: 0,
+        },
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+        },
+        {
+          layer: "Barrios_bpeat",
+          opacity: 0,
+        },
+        {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0,
+        },
+        {
+          layer: "PServicios",
+          opacity: 0.7,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "Barrios_bpeat",
+          opacity: 0,
+        },
+        {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0,
+        },
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+        },
+        {
+          layer: "PServicios",
+          opacity: 1,
+        },
+      ],
+    },
+    {
+      id: "Ch4c_Conclusiones",
+      alignment: "full",
+      title: "",
+      image: "./assets/Calificacion_Global_To.JPG",
+      description:
+        " Y a partir de la calificación creada por el documento “Plan de indicadores de sostenibilidad urbana de Vitoria Gasteiz” llegamos a clasificar el nivel de sostenibilidad urbana de Turín como insuficiente ",
+      location: {
+        center: [7.68382, 45.0576],
+        zoom: 11.47,
+        pitch: 11.5,
+        bearing: 24.71,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      onChapterEnter: [
+        {
+          layer: "circoscrizioni-63kg0n",
+          opacity: 0,
+        },
+        {
+          layer: "barrios-lineas-dhu9vw",
+          opacity: 0,
+        },
+        {
+          layer: "vpeatones-bto0ry",
+          opacity: 0,
+        },
+        {
+          layer: "Barrios_bpeat",
+          opacity: 0,
+        },
+        {
+          layer: "pserv-basics-9gyovn",
+          opacity: 0,
+        },
+        {
+          layer: "PServicios",
+          opacity: 0.7,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "Barrios_bpeat",
           opacity: 0,
         },
         {
