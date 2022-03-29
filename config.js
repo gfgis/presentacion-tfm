@@ -27,14 +27,14 @@ var config = {
       },
       onChapterEnter: [
         {
-          layer: "area_to_linea-ahr8es",
+          layer: "area_to_linea",
           opacity: 1,
           duration: 5000,
         },
       ],
       onChapterExit: [
         {
-          layer: "area_to_linea-ahr8es",
+          layer: "area_to_linea",
           opacity: 0.75,
         },
       ],
@@ -56,10 +56,9 @@ var config = {
       },
       mapAnimation: "flyTo",
       rotateAnimation: true,
-      callback: " ",
       onChapterEnter: [
         {
-          layer: "area_to_linea-ahr8es",
+          layer: "area_to_linea",
           opacity: 0.75,
         },
       ],
@@ -69,7 +68,7 @@ var config = {
           opacity: 0,
         },
         {
-          layer: "area_to_linea-ahr8es",
+          layer: "area_to_linea",
           opacity: 0.5,
         },
         {
@@ -113,7 +112,6 @@ var config = {
       },
       mapAnimation: "flyTo",
       rotateAnimation: true,
-      callback: " ",
       onChapterEnter: [
         {
           layer: "circoscrizioni-63kg0n",
@@ -141,7 +139,7 @@ var config = {
           opacity: 0,
         },
         {
-          layer: "area_to_linea-ahr8es",
+          layer: "area_to_linea",
           opacity: 0.5,
           duration: 5000,
         },
@@ -165,7 +163,7 @@ var config = {
           opacity: 0,
         },
         {
-          layer: "area_to_linea-ahr8es",
+          layer: "area_to_linea",
           opacity: 0.5,
         },
         {
@@ -196,7 +194,7 @@ var config = {
       rotateAnimation: true,
       onChapterEnter: [
         {
-          layer: "area_to_linea-ahr8es",
+          layer: "area_to_linea",
           opacity: 0.5,
         },
         {
@@ -206,7 +204,7 @@ var config = {
       ],
       onChapterExit: [
         {
-          layer: "area_to_linea-ahr8es",
+          layer: "area_to_linea",
           opacity: 0.7,
         },
         {
@@ -346,7 +344,7 @@ var config = {
           opacity: 1,
         },
         {
-          layer: "area_to_linea-ahr8es",
+          layer: "area_to_linea",
           opacity: 0.5,
           duration: 5000,
         },
@@ -362,7 +360,7 @@ var config = {
           opacity: 0,
         },
         {
-          layer: "area_to_linea-ahr8es",
+          layer: "area_to_linea",
           opacity: 0.5,
         },
       ],
@@ -373,7 +371,7 @@ var config = {
       title: "Reparto del viario público",
       image: " ",
       description:
-        " El objetivo principal de este indicador es identificar donde y si se respeta la función mixta del viario público urbano mediante una extensión adecuada del eje peatonal, en un espacio que tradicionalmente viene utilizado/planeado predominantemente por/para el vehículo privado.",
+        "El objetivo principal de este indicador es identificar donde y si se respeta la función mixta del viario público urbano mediante una extensión adecuada del eje peatonal, en un espacio que tradicionalmente viene utilizado/planeado predominantemente por/para el vehículo privado.",
       location: {
         center: [7.67555, 45.05981],
         zoom: 14.2,
@@ -484,7 +482,7 @@ var config = {
           opacity: 1,
         },
         {
-          layer: "area_to_linea-ahr8es",
+          layer: "area_to_linea",
           opacity: 0.5,
         },
         {
