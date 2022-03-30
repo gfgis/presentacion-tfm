@@ -7,12 +7,12 @@
       name="viewport"
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
     />
-    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
     <link
-      href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css"
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
     <style>
       body {
@@ -316,13 +316,16 @@
             var chapter = config.chapters.find(
               (chap) => chap.id === response.element.id
             );
+            Array.from(document.querySelectorAll('.active')).forEach(e =>{
+                e.classList.remove("active");
+            })
             response.element.classList.add("active");
             map[chapter.mapAnimation || "flyTo"](chapter.location);
 
             if (config.showMarkers) {
               marker.setLngLat(chapter.location.center);
             }
-            if (chapter.onChapterEnter.length > 0) {
+            if (chapter.onChapterEnter && chapter.onChapterEnter.length > 0) {
               chapter.onChapterEnter.forEach(setLayerOpacity);
             }
             if (chapter.callback) {
@@ -345,7 +348,7 @@
               (chap) => chap.id === response.element.id
             );
             response.element.classList.remove("active");
-            if (chapter.onChapterExit.length > 0) {
+            if (chapter.onChapterExit && chapter.onChapterExit.length > 0) {
               chapter.onChapterExit.forEach(setLayerOpacity);
             }
           });

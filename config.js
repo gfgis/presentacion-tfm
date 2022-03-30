@@ -1,5 +1,5 @@
 var config = {
-  style: "mapbox://styles/giuls0917/cl06xtvwe005514rormyr8smk",
+  style: "mapbox://styles/giuls0917/cl1cimozb002714p2ldmeq7rj",
   accessToken:
     "pk.eyJ1IjoiZ2l1bHMwOTE3IiwiYSI6ImNranlqM2RpYzBzMTcybm53NDcyMHhleWwifQ.qqOs_Y1d36x-WQYI_sww5g",
   showMarkers: false,
@@ -29,14 +29,15 @@ var config = {
         {
           layer: "area_to_linea",
           opacity: 1,
-          duration: 5000,
         },
-      ],
-      onChapterExit: [
-        {
-          layer: "area_to_linea",
-          opacity: 0.75,
-        },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0 },
+        { layer: "PServicios", opacity: 0 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
     {
@@ -57,40 +58,15 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: true,
       onChapterEnter: [
-        {
-          layer: "area_to_linea",
-          opacity: 0.75,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "circoscrizioni-63kg0n",
-          opacity: 0,
-        },
-        {
-          layer: "area_to_linea",
-          opacity: 0.5,
-        },
-        {
-          layer: "Barrios_bpeat",
-          opacity: 0,
-        },
-        {
-          layer: "barrios-lineas-dhu9vw",
-          opacity: 0,
-        },
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0,
-        },
-        {
-          layer: "palazzi-9xohjo",
-          opacity: 0.7,
-        },
-        {
-          layer: "PServicios",
-          opacity: 0,
-        },
+        { layer: "area_to_linea", opacity: 0.75 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0 },
+        { layer: "PServicios", opacity: 0 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
     {
@@ -113,67 +89,15 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: true,
       onChapterEnter: [
-        {
-          layer: "circoscrizioni-63kg0n",
-          opacity: 0,
-        },
-        {
-          layer: "PServicios",
-          opacity: 0,
-        },
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-          duration: 5000,
-        },
-        {
-          layer: "carreggiata-9oh3yv",
-          opacity: 0,
-        },
-        {
-          layer: "barrios-lineas-dhu9vw",
-          opacity: 0,
-        },
-        {
-          layer: "area_to_linea",
-          opacity: 0.5,
-          duration: 5000,
-        },
-        {
-          layer: "palazzi-9xohjo",
-          opacity: 0.7,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-          duration: 5000,
-        },
-        {
-          layer: "carreggiata-9oh3yv",
-          opacity: 0,
-        },
-        {
-          layer: "area_to_linea",
-          opacity: 0.5,
-        },
-        {
-          layer: "palazzi-9xohjo",
-          opacity: 0.7,
-        },
-        {
-          layer: "barrios-lineas-dhu9vw",
-          opacity: 0,
-        },
+        { layer: "area_to_linea", opacity: 0.5 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0.7 },
+        { layer: "PServicios", opacity: 0 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
     {
@@ -193,24 +117,15 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: true,
       onChapterEnter: [
-        {
-          layer: "area_to_linea",
-          opacity: 0.5,
-        },
-        {
-          layer: "palazzi-9xohjo",
-          opacity: 0.7,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "area_to_linea",
-          opacity: 0.7,
-        },
-        {
-          layer: "palazzi-9xohjo",
-          opacity: 0.5,
-        },
+        { layer: "area_to_linea", opacity: 0.5 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0.7 },
+        { layer: "PServicios", opacity: 0 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
     {
@@ -231,16 +146,15 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: true,
       onChapterEnter: [
-        {
-          layer: "palazzi-9xohjo",
-          opacity: 0.7,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "palazzi-9xohjo",
-          opacity: 0,
-        },
+        { layer: "area_to_linea", opacity: 0 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0.7 },
+        { layer: "PServicios", opacity: 0 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
     {
@@ -256,24 +170,15 @@ var config = {
         bearing: 29.56,
       },
       onChapterEnter: [
-        {
-          layer: "circoscrizioni-63kg0n",
-          opacity: 1,
-        },
-        {
-          layer: "barrios-lineas-dhu9vw",
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "barrios-lineas-dhu9vw",
-          opacity: 1,
-        },
-        {
-          layer: "circoscrizioni-63kg0n",
-          opacity: 0,
-        },
+        { layer: "area_to_linea", opacity: 0 },
+        { layer: "circoscrizioni-63kg0n", opacity: 1 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0 },
+        { layer: "PServicios", opacity: 0 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
     {
@@ -290,24 +195,15 @@ var config = {
         bearing: 29.56,
       },
       onChapterEnter: [
-        {
-          layer: "barrios-lineas-dhu9vw",
-          opacity: 1,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0,
-        },
-        {
-          layer: "barrios-lineas-dhu9vw",
-          opacity: 0,
-        },
-        {
-          layer: "palazzi-9xohjo",
-          opacity: 1,
-        },
+        { layer: "area_to_linea", opacity: 0 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 1 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0 },
+        { layer: "PServicios", opacity: 0 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
     {
@@ -326,43 +222,15 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: true,
       onChapterEnter: [
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-          duration: 5000,
-        },
-        {
-          layer: "carreggiata-9oh3yv",
-          opacity: 0,
-        },
-        {
-          layer: "palazzi-9xohjo",
-          opacity: 1,
-        },
-        {
-          layer: "area_to_linea",
-          opacity: 0.5,
-          duration: 5000,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-          duration: 5000,
-        },
-        {
-          layer: "carreggiata-9oh3yv",
-          opacity: 0,
-        },
-        {
-          layer: "area_to_linea",
-          opacity: 0.5,
-        },
+        { layer: "area_to_linea", opacity: 0.5 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 1 },
+        { layer: "PServicios", opacity: 0 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
     {
@@ -381,37 +249,24 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: false,
       onChapterEnter: [
-        {
-          layer: "carreggiata-9oh3yv",
-          opacity: 1,
-        },
-        {
-          layer: "palazzi-9xohjo",
-          opacity: 0.5,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "carreggiata-9oh3yv",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0.7,
-        },
+        { layer: "area_to_linea", opacity: 0 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0.5 },
+        { layer: "PServicios", opacity: 0 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 1 },
       ],
     },
     {
       id: "Ch2_b",
       alignment: "right",
-      title: " ",
+      title: "",
       image: " ",
       description:
-        "Vpeatones% = superficie del viario peatonal / superficie del viario total.",
+        "Porcentaje Vpeatones (superficie del viario peatonal / superficie del viario total.)",
       location: {
         center: [7.67555, 45.05981],
         zoom: 14.05,
@@ -421,35 +276,22 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: false,
       onChapterEnter: [
-        {
-          layer: "carreggiata-9oh3yv",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 1,
-        },
-        {
-          layer: "palazzi-9xohjo",
-          opacity: 0.3,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 1,
-        },
-        {
-          layer: "carreggiata-9oh3yv",
-          opacity: 0,
-        },
+        { layer: "area_to_linea", opacity: 0 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0.3 },
+        { layer: "PServicios", opacity: 0 },
+        { layer: "vpeatones-bto0ry", opacity: 1 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
     {
       id: "Ch2_c",
       alignment: "right",
       title:
-        "Vpeatones% = superficie del viario peatonal / superficie del viario total",
+        "Porcentaje Vpeatones (superficie del viario peatonal / superficie del viario total)",
       image: " ",
       description:
         "La red del viario viene segmentada por una malla hexagonal de 0.5 hectarias para obtener datos a un mayor nivel de detalle. En verde oscuro es posible apreciar zonas con una proporción 'adecuada' de viario peatonal, mientras que en rojo se observan aquellas partes del viario donde hay carencia de espacios peatonales.",
@@ -462,70 +304,42 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: true,
       onChapterEnter: [
-        {
-          layer: "carreggiata-9oh3yv",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 1,
-          duration: 5000,
-        },
-        {
-          layer: "palazzi-9xohjo",
-          opacity: 0.3,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 1,
-        },
-        {
-          layer: "area_to_linea",
-          opacity: 0.5,
-        },
-        {
-          layer: "Barrios_bpeat",
-          opacity: 1,
-          duration: 5000,
-        },
+        { layer: "area_to_linea", opacity: 0 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0.3 },
+        { layer: "PServicios", opacity: 0 },
+        { layer: "vpeatones-bto0ry", opacity: 1 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
     {
       id: "Ch2_d",
       alignment: "right",
       title: "Vpeatones por barrios",
-      image: "",
+      image: " ",
       description:
         "Ningún barrio cumple con la superficie minima esperada de peatonal, que debería ser como mínimo un 60%, sino que el mayor resultado obtenido corresponde a 55% de superficie peatonal.",
       location: {
-        center: [7.70343, 45.04905],
-        zoom: 11.2,
-        pitch: 0.2,
-        bearing: 22.83,
+        center: [7.708, 45.049],
+        zoom: 13,
+        pitch: 30,
+        bearing: 25,
       },
-      mapAnimation: "flyTo",
+      mapAnimation: "easeTo",
       rotateAnimation: false,
       onChapterEnter: [
-        {
-          layer: "Barrios_bpeat",
-          opacity: 1,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "Barrios_bpeat",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-        },
+        { layer: "area_to_linea", opacity: 0 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0 },
+        { layer: "PServicios", opacity: 0 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 1 },
       ],
     },
     {
@@ -544,56 +358,22 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: false,
       onChapterEnter: [
-        {
-          layer: "Barrios_bpeat",
-          opacity: 0,
-        },
-        {
-          layer: "palazzi-9xohjo",
-          opacity: 0,
-        },
-        {
-          layer: "Barrios_bpeat",
-          opacity: 0,
-        },
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0.7,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-          duration: 5000,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "Barrios_bpeat",
-          opacity: 0,
-        },
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0.7,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-          duration: 5000,
-        },
-        {
-          layer: "barrios-lineas-dhu9vw",
-          opacity: 0,
-        },
-        {
-          layer: "circoscrizioni-63kg0n",
-          opacity: 0,
-        },
+        { layer: "area_to_linea", opacity: 0 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0.7 },
+        { layer: "palazzi-9xohjo", opacity: 0 },
+        { layer: "PServicios", opacity: 0 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
     {
       id: "Ch3_b",
       alignment: "right",
-      title: "% de población con acceso a los Servicios básicos por barrios",
+      title:
+        "Porcentaje de población con acceso a los Servicios básicos por barrios",
       image: "./assets/Leg_Prox_Serv_Basics.png",
       description:
         "En general, la ciudad de Turín carece de servicios básicos en proximidad para sus habitantes. Se observa que en su conjunto apenas el 47% de la población tiene una cobertura simultánea a al menos 13 servicios pertenecientes a las cuatro tipologías indicadas y que apenas 2 barrios (Centro y San Salvario) tienen 75% de la población cobierta.",
@@ -606,48 +386,15 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: false,
       onChapterEnter: [
-        {
-          layer: "circoscrizioni-63kg0n",
-          opacity: 0,
-        },
-        {
-          layer: "barrios-lineas-dhu9vw",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-        },
-        {
-          layer: "Barrios_bpeat",
-          opacity: 0,
-        },
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0,
-        },
-        {
-          layer: "PServicios",
-          opacity: 0.7,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "Barrios_bpeat",
-          opacity: 0,
-        },
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-        },
-        {
-          layer: "PServicios",
-          opacity: 1,
-        },
+        { layer: "area_to_linea", opacity: 0 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0 },
+        { layer: "PServicios", opacity: 0.7 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
     {
@@ -666,48 +413,15 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: false,
       onChapterEnter: [
-        {
-          layer: "circoscrizioni-63kg0n",
-          opacity: 0,
-        },
-        {
-          layer: "barrios-lineas-dhu9vw",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-        },
-        {
-          layer: "Barrios_bpeat",
-          opacity: 0,
-        },
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0,
-        },
-        {
-          layer: "PServicios",
-          opacity: 0.7,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "Barrios_bpeat",
-          opacity: 0,
-        },
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-        },
-        {
-          layer: "PServicios",
-          opacity: 1,
-        },
+        { layer: "area_to_linea", opacity: 0 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0 },
+        { layer: "PServicios", opacity: 0.7 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
     {
@@ -726,48 +440,15 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: false,
       onChapterEnter: [
-        {
-          layer: "circoscrizioni-63kg0n",
-          opacity: 0,
-        },
-        {
-          layer: "barrios-lineas-dhu9vw",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-        },
-        {
-          layer: "Barrios_bpeat",
-          opacity: 0,
-        },
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0,
-        },
-        {
-          layer: "PServicios",
-          opacity: 0.7,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "Barrios_bpeat",
-          opacity: 0,
-        },
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-        },
-        {
-          layer: "PServicios",
-          opacity: 1,
-        },
+        { layer: "area_to_linea", opacity: 0 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0 },
+        { layer: "PServicios", opacity: 0.7 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
     {
@@ -786,48 +467,15 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: false,
       onChapterEnter: [
-        {
-          layer: "circoscrizioni-63kg0n",
-          opacity: 0,
-        },
-        {
-          layer: "barrios-lineas-dhu9vw",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-        },
-        {
-          layer: "Barrios_bpeat",
-          opacity: 0,
-        },
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0,
-        },
-        {
-          layer: "PServicios",
-          opacity: 0.7,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "Barrios_bpeat",
-          opacity: 0,
-        },
-        {
-          layer: "pserv-basics-9gyovn",
-          opacity: 0,
-        },
-        {
-          layer: "vpeatones-bto0ry",
-          opacity: 0,
-        },
-        {
-          layer: "PServicios",
-          opacity: 1,
-        },
+        { layer: "area_to_linea", opacity: 0 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0 },
+        { layer: "PServicios", opacity: 0.7 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
   ],
