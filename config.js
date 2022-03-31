@@ -18,7 +18,7 @@ var config = {
       title: "Introducción",
       description:
         "Este informe tiene como objetivo evaluar el escenario actual de la ciudad de Turín a escala urbana e intraurbana en términos de su sostenibilidad. Para tal propósito este estudio se apoya en una serie de indicadores creados por la 'Agencia d’Ecologìa Urbana de Barcelona' en el año 2010.",
-      image: "",
+      image: "./assets/sostenibilidad_urbana.png",
       location: {
         center: [7.72275, 45.12798],
         zoom: 8.17,
@@ -45,7 +45,7 @@ var config = {
       alignment: "right",
       title: " ",
       description:
-        "La ciudad tiene una extención 130 km2, y viene separada en tres grandes partes por sus dos ríos principales:",
+        "La ciudad tiene una extensión 130 km2, y viene separada en tres grandes partes por sus dos ríos principales:",
       image: "",
       location: {
         center: [7.70223, 45.06002],
@@ -75,8 +75,7 @@ var config = {
       hidden: false,
       title: " ",
       image: "",
-      description:
-        "La Dora, que atraviesa la ciudad en dirección este - oeste;",
+      description: "La Dora, que atraviesa la ciudad en dirección oeste - este",
       location: {
         center: [7.64019, 45.08769],
         zoom: 14.5,
@@ -104,8 +103,8 @@ var config = {
       id: "Ch1d_Po",
       alignment: "left",
       title: "",
-      image: "",
-      description: "y el Po, que fluye en direcció norte - sur.",
+      image: "./assets/Po_Ponte_Isabella.jpeg",
+      description: "y el Po, que fluye en dirección norte - sur.",
       location: {
         center: [7.67292, 45.04004],
         zoom: 13.67,
@@ -115,7 +114,7 @@ var config = {
         curve: 1,
       },
       mapAnimation: "flyTo",
-      rotateAnimation: true,
+      rotateAnimation: false,
       onChapterEnter: [
         { layer: "area_to_linea", opacity: 0.5 },
         { layer: "circoscrizioni-63kg0n", opacity: 0 },
@@ -185,7 +184,7 @@ var config = {
       id: "Ch1g_datos_esenc",
       alignment: "right",
       title: " ",
-      image: " ",
+      image: "./assets/popolazione-01.png",
       description:
         "Y 23 barrios. En términos de población, Turín tiene una perdida de 20.000 habitantes entre el periodo de 2011-2021, alcanzando en septiembre de este ultimo año 852.223 habitantes.",
       location: {
@@ -198,21 +197,21 @@ var config = {
         { layer: "area_to_linea", opacity: 0 },
         { layer: "circoscrizioni-63kg0n", opacity: 0 },
         { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0 },
         { layer: "barrios-lineas-dhu9vw", opacity: 1 },
         { layer: "pserv-basics-9gyovn", opacity: 0 },
-        { layer: "palazzi-9xohjo", opacity: 0 },
         { layer: "PServicios", opacity: 0 },
         { layer: "vpeatones-bto0ry", opacity: 0 },
         { layer: "carreggiata-9oh3yv", opacity: 0 },
       ],
     },
     {
-      id: "Ch1_fin",
+      id: "Ch1_h",
       alignment: "right",
       title: "Los indicadores:",
       image: "./assets/LISTADO_INDI.png",
       description:
-        "Se utiliza un total de diez indicadores repartidos en seis ambitos o ejes de sostenibilidad:",
+        "Se utiliza un total de diez indicadores repartidos en seis ámbitos de estudio:",
       location: {
         center: [7.67894, 45.0545],
         zoom: 14.35,
@@ -239,7 +238,7 @@ var config = {
       title: "Reparto del viario público",
       image: " ",
       description:
-        "El objetivo principal de este indicador es identificar donde y si se respeta la función mixta del viario público urbano mediante una extensión adecuada del eje peatonal, en un espacio que tradicionalmente viene utilizado/planeado predominantemente por/para el vehículo privado.",
+        "El objetivo principal de este indicador es identificar donde y si se respeta la función mixta del viario público urbano mediante una extensión adecuada del eje peatonal, en un espacio que tradicionalmente viene planeado predominantemente para el uso del vehículo privado.",
       location: {
         center: [7.67555, 45.05981],
         zoom: 14.2,
@@ -264,9 +263,9 @@ var config = {
       id: "Ch2_b",
       alignment: "right",
       title: "",
-      image: " ",
+      image: "./assets/evaluacion_PViario.jpg",
       description:
-        "Porcentaje Vpeatones (superficie del viario peatonal / superficie del viario total.)",
+        "Porcentaje Viario público peatonal = (superficie del viario peatonal / superficie del viario total)",
       location: {
         center: [7.67555, 45.05981],
         zoom: 14.05,
@@ -290,11 +289,10 @@ var config = {
     {
       id: "Ch2_c",
       alignment: "right",
-      title:
-        "Porcentaje Vpeatones (superficie del viario peatonal / superficie del viario total)",
-      image: " ",
+      title: "",
+      image: "",
       description:
-        "La red del viario viene segmentada por una malla hexagonal de 0.5 hectarias para obtener datos a un mayor nivel de detalle. En verde oscuro es posible apreciar zonas con una proporción 'adecuada' de viario peatonal, mientras que en rojo se observan aquellas partes del viario donde hay carencia de espacios peatonales.",
+        "La red del viario viene segmentada por una malla hexagonal de 0.5 hectáreas para obtener datos a un mayor nivel de detalle. En verde oscuro es posible apreciar zonas con una proporción 'adecuada' de viario peatonal, mientras que en rojo se observan aquellas partes del viario donde hay carencia de espacios peatonales",
       location: {
         center: [7.67061, 45.05955],
         zoom: 15.6,
@@ -319,7 +317,7 @@ var config = {
       id: "Ch2_d",
       alignment: "right",
       title: "Vpeatones por barrios",
-      image: " ",
+      image: "./assets/Leg_Sup_V_Publ-01.png",
       description:
         "Ningún barrio cumple con la superficie minima esperada de peatonal, que debería ser como mínimo un 60%, sino que el mayor resultado obtenido corresponde a 55% de superficie peatonal.",
       location: {
@@ -329,7 +327,7 @@ var config = {
         bearing: 25,
       },
       mapAnimation: "easeTo",
-      rotateAnimation: false,
+      rotateAnimation: true,
       onChapterEnter: [
         { layer: "area_to_linea", opacity: 0 },
         { layer: "circoscrizioni-63kg0n", opacity: 0 },
@@ -348,7 +346,7 @@ var config = {
       title: "Proximidad de la población a los servicios basicos",
       image: "./assets/Prox_Serv_Basics.png",
       description:
-        "El objetivo de este indicador es asegurar un mínimo de servicios básicos de proximidad para la población.Para tal, se establecen 4 macro cate de servicios básicos y se estima una distancia máximas",
+        "El objetivo de este indicador es asegurar un mínimo de servicios básicos de proximidad para la población.Para tal, se establecen 4 macro categorías de servicios básicos y se estima una distancia máxima. <br> Proximidad de servicios = (población con cobertura simultánea a 4 de los 5 equipamientos básicos, a 6 de los 8 servicios comerciales de proximidad, a 2 de los 3 servicios de movilidad y al servicio de espacio verde) / población total",
       location: {
         center: [7.67066, 45.04649],
         zoom: 13.27,
@@ -457,7 +455,33 @@ var config = {
       title: "",
       image: "./assets/Calificacion_Global_To.JPG",
       description:
-        " Y a partir de la calificación creada por el documento “Plan de indicadores de sostenibilidad urbana de Vitoria Gasteiz” llegamos a clasificar el nivel de sostenibilidad urbana de Turín como insuficiente ",
+        "Y a partir de la calificación creada por el documento “Plan de indicadores de sostenibilidad urbana de Vitoria Gasteiz” llegamos a clasificar el nivel de sostenibilidad urbana de Turín como insuficiente ",
+      location: {
+        center: [7.68382, 45.0576],
+        zoom: 11.47,
+        pitch: 11.5,
+        bearing: 24.71,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      onChapterEnter: [
+        { layer: "area_to_linea", opacity: 0 },
+        { layer: "circoscrizioni-63kg0n", opacity: 0 },
+        { layer: "Barrios_bpeat", opacity: 0 },
+        { layer: "barrios-lineas-dhu9vw", opacity: 0 },
+        { layer: "pserv-basics-9gyovn", opacity: 0 },
+        { layer: "palazzi-9xohjo", opacity: 0 },
+        { layer: "PServicios", opacity: 0.7 },
+        { layer: "vpeatones-bto0ry", opacity: 0 },
+        { layer: "carreggiata-9oh3yv", opacity: 0 },
+      ],
+    },
+    {
+      id: "Ch4d_Conclusiones",
+      alignment: "full",
+      title: "",
+      image: "./assets/VALORACION_BARRIOSII.JPG",
+      description: "",
       location: {
         center: [7.68382, 45.0576],
         zoom: 11.47,
