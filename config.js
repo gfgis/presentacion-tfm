@@ -263,7 +263,7 @@ var config = {
       id: "Ch2_b",
       alignment: "right",
       title: "",
-      image: "./assets/evaluacion_PViario.jpg",
+      image: "./assets/evaluacion_PViario.JPG",
       description:
         "Porcentaje Viario público peatonal = (superficie del viario peatonal / superficie del viario total)",
       location: {
